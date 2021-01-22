@@ -1,0 +1,161 @@
+@import url('https://fonts.googleapis.com/css2?family=Crimson+Pro:wght@200&family=Lora&family=Montserrat:wght@300&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: black;
+}
+h1,p{
+    color: white;
+}
+/*---------- Upper Thorax -------------*/
+.header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.header .link a{
+    font-size: 13px;
+    position: absolute;
+    top: 6%;
+    left: 8%;
+    text-decoration: none;
+    color: white;
+    border: 2px solid white;
+    padding: 1%;
+    font-family: 'Crimson Pro', serif;
+}
+.header .nav{
+    position :absolute;
+    top: 7%;
+    right: 8%;
+}
+.header .nav li{
+    list-style: none;
+    float: left;
+    padding-left: 40px;
+}
+.header .nav a{
+     text-decoration: none;
+    color: white;
+    padding-left: 20px;
+    font-family: 'Montserrat', sans-serif;
+}
+/*-------------------------------------------*/
+
+/*----------------lower Thorax ------------*/
+
+.section{
+    position:absolute;
+    top: 30%;
+    display: flex;
+    text-align: center;
+}
+.section .text{
+    text-align: left;
+    padding-left: 10%;
+}
+.text h1{
+    font-family: 'Lora', serif;
+    font-size: 45px;
+}
+.text p{
+    font-family: 'Montserrat', sans-serif;
+}
+.text .info{
+    padding: 5% 9% 5% 0;
+    font-weight: lighter;
+    font-size: 14px;
+}
+.text .read{
+    font-size: 15px;
+}
+i{
+    padding-left: 3%;
+}
+.img{
+    padding: 0 2% 2% 0;
+}
+.bigimg img{
+    width: 90%;
+    height :60%;
+}
+.shortimg{
+    padding: 2%;
+    position: absolute;
+    bottom:-12%;
+    left: 65%;
+    background-color: black;
+    width: 25%;
+    height: 30%;
+    font-family: 'Montserrat', sans-serif;
+}
+.profile{
+    font-weight: 100;
+    font-size: 10px;
+    
+}
+.date{
+    padding-top: 3%;
+}
+.shortimg img{
+    width: 15%;
+    height :30%;
+    position: absolute;
+    right: 80%;
+    top:10%;
+    border-radius:50%;
+}
+/*----------------------------------------*/
+
+footer{
+    position: absolute;
+    font-family: 'Montserrat', sans-serif;
+    padding: 2% 0 0 0 ;
+    color: rgb(190, 187, 187); 
+    z-index: 3;  
+    top: 120%;
+    text-align: center;
+    font-size: 15px;
+    left: 38%;
+}
+
+@media(max-width: 668px){
+   .nav{
+       display: none;
+   }
+   .toggle
+{
+  position: relative;
+  width: 60px;
+  height: 60px;
+  background: url(https://i.ibb.co/HrfVRcx/menu.png);
+  background-repeat: no-repeat;
+  background-size: 30px;
+  background-position: center;
+  cursor: pointer;
+  left: 80%;
+  padding-top: 18%;
+}
+.toggle.active
+{
+  background: url(https://i.ibb.co/rt3HybH/close.png);
+  background-repeat: no-repeat;
+  background-size: 25px;
+  background-position: center;
+  cursor: pointer;
+}
+}
+@media(min-width: 1000px){
+    .shortimg img{
+        width: 15%;
+        height :30%;
+        position: absolute;
+        right: 70%;
+        top:10%;
+        border-radius:50%;
+    }
+}
